@@ -1,6 +1,43 @@
-📊 Demographic Data AnalyzerThis project contains a Python script that uses the pandas library to perform various calculations and derive insights from a public demographic dataset (typically the US Adult Census data, found in adult.data.csv).The primary goal of this script is to answer several key questions about the data, including statistics on race, education, work hours, and income (>50K).🚀 Metrics CalculatedThe calculate_demographic_data function processes the dataset and returns the following key demographic statistics:Race Count: The number of individuals representing each race in the dataset.Average Age of Men: The average age of male participants.Percentage with Bachelors: The percentage of the population holding a Bachelor's degree.High/Low Education & Income:Percentage of people with advanced education (Bachelors, Masters, or Doctorate) who earn 50K.Percentage of people without advanced education who earn 50K.Minimum Work Hours: The minimum number of hours worked per week.Rich Percentage (Min Workers): The percentage of those who work the minimum number of hours per week that earn 50K.Highest Earning Country: The country with the highest percentage of people earning 50K, and that percentage value.Top India Occupation: The most popular occupation among individuals in India who earn 50K.🛠️ PrerequisitesTo run this script, you need:Python 3Pandas Library: A fast, powerful, flexible, and easy-to-use open-source data analysis and manipulation tool.You can install the necessary library using pip:pip install pandas
-📝 Usage1. Data FileEnsure that the required dataset file, named adult.data.csv, is located in the same directory as the demographic_analyzer.py script (assuming you name your file this).2. Running the AnalysisThe script defines a function that you can call directly to run the analysis and print the results to the console.If your Python file is named demographic_analyzer.py, you can run the analysis using the following example:from demographic_analyzer import calculate_demographic_data
+# 📊 Demographic Data Analyzer
 
-# Run the calculation and print the results
-results = calculate_demographic_data(print_data=True)
-# The 'results' variable will be a dictionary containing all the calculated values.
+This project contains a Python script that uses the **pandas** library to perform various calculations and derive insights from a public demographic dataset (typically the US Adult Census data, found in `adult.data.csv`).
+
+The primary goal of this script is to answer several key questions about the data, including statistics on race, education, work hours, and income ($>50K$).
+
+---
+
+## 🚀 Metrics Calculated
+
+The `calculate_demographic_data` function processes the dataset and returns the following key demographic statistics:
+
+1.  **Race Count**: The number of individuals representing each race in the dataset.
+
+2.  **Average Age of Men**: The average age of male participants, rounded to one decimal place.
+
+3.  **Percentage with Bachelors**: The percentage of the population holding a Bachelor's degree.
+
+4.  **High/Low Education & Income**:
+    * Percentage of people with **advanced education** (`Bachelors`, `Masters`, or `Doctorate`) who earn $>50K$.
+    * Percentage of people **without advanced education** who earn $>50K$.
+
+5.  **Minimum Work Hours**: The minimum number of hours worked per week.
+
+6.  **Rich Percentage (Min Workers)**: The percentage of those who work the minimum number of hours per week that earn $>50K$.
+
+7.  **Highest Earning Country**: The country with the highest percentage of people earning $>50K$, and that percentage value.
+
+8.  **Top India Occupation**: The most popular occupation among individuals in India who earn $>50K$.
+
+---
+
+## 🛠️ Prerequisites
+
+To run this script, you need:
+
+* **Python 3**
+* **Pandas Library**: A powerful library for data analysis.
+
+You can install the necessary library using pip:
+
+```bash
+pip install pandas
